@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "ROLLUP_SKIP_LOAD_CONFIG=true npm install --omit=optional && vite build",
+    "build": "vite build --emptyOutDir",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
