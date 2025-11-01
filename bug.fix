@@ -1,0 +1,53 @@
+23:38:09.813 Running build in Washington, D.C., USA (East) – iad1
+23:38:09.814 Build machine configuration: 2 cores, 8 GB
+23:38:10.029 Cloning github.com/TUSHARXP-10/pharma_cy (Branch: main, Commit: f721af9)
+23:38:10.030 Previous build caches not available.
+23:38:10.252 Cloning completed: 223.000ms
+23:38:10.642 Running "vercel build"
+23:38:11.290 Vercel CLI 48.8.0
+23:38:11.946 Installing dependencies...
+23:38:33.737 
+23:38:33.738 added 382 packages in 21s
+23:38:33.738 
+23:38:33.738 80 packages are looking for funding
+23:38:33.739   run `npm fund` for details
+23:38:33.788 Running "npm run build"
+23:38:33.921 
+23:38:33.922 > vite_react_shadcn_ts@0.0.0 build
+23:38:33.922 > vite build
+23:38:33.922 
+23:38:34.114 /vercel/path0/node_modules/rollup/dist/native.js:59
+23:38:34.114 		throw new Error(
+23:38:34.114 		      ^
+23:38:34.115 
+23:38:34.116 Error: Cannot find module @rollup/rollup-linux-x64-gnu. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+23:38:34.116     at requireWithFriendlyError (/vercel/path0/node_modules/rollup/dist/native.js:59:9)
+23:38:34.116     at Object.<anonymous> (/vercel/path0/node_modules/rollup/dist/native.js:68:76)
+23:38:34.116     at Module._compile (node:internal/modules/cjs/loader:1706:14)
+23:38:34.116     at Object..js (node:internal/modules/cjs/loader:1839:10)
+23:38:34.116     at Module.load (node:internal/modules/cjs/loader:1441:32)
+23:38:34.116     at Function._load (node:internal/modules/cjs/loader:1263:12)
+23:38:34.116     at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+23:38:34.116     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+23:38:34.117     at cjsLoader (node:internal/modules/esm/translators:309:5)
+23:38:34.117     at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:202:7) {
+23:38:34.117   [cause]: Error: Cannot find module '@rollup/rollup-linux-x64-gnu'
+23:38:34.117   Require stack:
+23:38:34.117   - /vercel/path0/node_modules/rollup/dist/native.js
+23:38:34.117       at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+23:38:34.117       at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+23:38:34.117       at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+23:38:34.117       at Function._load (node:internal/modules/cjs/loader:1192:37)
+23:38:34.117       at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+23:38:34.118       at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+23:38:34.118       at Module.require (node:internal/modules/cjs/loader:1463:12)
+23:38:34.118       at require (node:internal/modules/helpers:147:16)
+23:38:34.118       at requireWithFriendlyError (/vercel/path0/node_modules/rollup/dist/native.js:41:10)
+23:38:34.118       at Object.<anonymous> (/vercel/path0/node_modules/rollup/dist/native.js:68:76) {
+23:38:34.118     code: 'MODULE_NOT_FOUND',
+23:38:34.118     requireStack: [ '/vercel/path0/node_modules/rollup/dist/native.js' ]
+23:38:34.118   }
+23:38:34.118 }
+23:38:34.118 
+23:38:34.118 Node.js v22.21.1
+23:38:34.133 Error: Command "npm run build" exited with 1
