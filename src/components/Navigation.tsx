@@ -18,11 +18,11 @@ export const Navigation = () => {
 
   return (
     <header className="glass border-b border-primary/20 sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3 sm:py-4">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <Pill className="h-8 w-8 text-primary glow-cyan" />
-            <span className="text-xl font-bold text-foreground glow-text-cyan">
+            <Pill className="h-6 w-6 sm:h-8 sm:w-8 text-primary glow-cyan flex-shrink-0" />
+            <span className="text-base sm:text-xl font-bold text-foreground glow-text-cyan">
               MedPharm Solutions
             </span>
           </Link>

@@ -108,4 +108,13 @@ All colors MUST be HSL.
   .glow-text-purple {
     text-shadow: 0 0 12px hsl(215 25% 35% / 0.3), 0 0 24px hsl(215 25% 35% / 0.15);
   }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }

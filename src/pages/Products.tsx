@@ -112,15 +112,15 @@ const Products = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10" />
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <Badge className="mb-4" variant="outline">Our Products</Badge>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 glow-text-cyan">
+            <Badge className="mb-3 sm:mb-4" variant="outline">Our Products</Badge>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 glow-text-cyan px-2">
               Comprehensive Pharmaceutical Portfolio
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-base sm:text-lg text-muted-foreground px-2">
               High-quality medications across multiple therapeutic areas, all manufactured 
               to the highest international standards.
             </p>
@@ -129,28 +129,28 @@ const Products = () => {
       </section>
 
       {/* Search & Filter */}
-      <section className="py-8 sticky top-0 z-30 glass border-b border-primary/20">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row gap-4">
+      <section className="py-4 sm:py-6 lg:py-8 sticky top-0 z-30 glass border-b border-primary/20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="flex flex-col md:flex-row gap-3 sm:gap-4">
             <div className="flex-1 relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
                 placeholder="Search products..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10"
+                className="pl-10 text-sm sm:text-base"
               />
             </div>
-            <div className="flex gap-2 overflow-x-auto pb-2 md:pb-0">
+            <div className="flex gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
               {categories.map((cat) => (
                 <Button
                   key={cat.id}
                   variant={selectedCategory === cat.id ? "default" : "outline"}
                   size="sm"
                   onClick={() => setSelectedCategory(cat.id)}
-                  className="whitespace-nowrap"
+                  className="whitespace-nowrap flex-shrink-0 text-xs sm:text-sm"
                 >
-                  <cat.icon className="h-4 w-4 mr-2" />
+                  <cat.icon className="h-3.5 w-3.5 sm:h-4 sm:w-4 mr-1.5 sm:mr-2" />
                   {cat.name}
                 </Button>
               ))}

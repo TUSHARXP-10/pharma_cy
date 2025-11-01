@@ -11,13 +11,13 @@ import {
 
 export default function BentoFeatures() {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 glow-text-cyan">
+    <section className="py-12 sm:py-16 lg:py-20">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 glow-text-cyan px-2">
             Why Healthcare Providers Choose Us
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
             Comprehensive pharmaceutical solutions backed by decades of expertise
           </p>
         </div>

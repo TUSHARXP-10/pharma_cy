@@ -70,15 +70,15 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10" />
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <Badge className="mb-4" variant="outline">Contact Us</Badge>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 glow-text-cyan">
+            <Badge className="mb-3 sm:mb-4" variant="outline">Contact Us</Badge>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 glow-text-cyan px-2">
               Let's Start a Conversation
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-base sm:text-lg text-muted-foreground px-2">
               Have questions about our products or services? Our team is ready to help 
               you find the right pharmaceutical solutions.
             </p>
@@ -87,57 +87,57 @@ const Contact = () => {
       </section>
 
       {/* Contact Methods */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-6 mb-12">
-            <Card className="p-6 text-center hover:glow-cyan transition-all">
-              <div className="inline-flex items-center justify-center w-12 h-12 glass rounded-full mb-4 border border-primary/50">
-                <Phone className="h-6 w-6 text-primary" />
+      <section className="py-8 sm:py-10 lg:py-12">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
+            <Card className="p-4 sm:p-6 text-center hover:glow-cyan transition-all">
+              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 glass rounded-full mb-3 sm:mb-4 border border-primary/50">
+                <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
               </div>
-              <h3 className="font-semibold mb-2">Phone</h3>
-              <p className="text-sm text-muted-foreground">Mon-Fri, 9AM-6PM EST</p>
-              <p className="text-sm text-primary mt-1">+1 (800) 123-4567</p>
+              <h3 className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Phone</h3>
+              <p className="text-xs sm:text-sm text-muted-foreground hidden sm:block">Mon-Fri, 9AM-6PM EST</p>
+              <p className="text-xs sm:text-sm text-primary mt-1">+1 (800) 123-4567</p>
             </Card>
 
-            <Card className="p-6 text-center hover:glow-cyan transition-all">
-              <div className="inline-flex items-center justify-center w-12 h-12 glass rounded-full mb-4 border border-primary/50">
-                <Mail className="h-6 w-6 text-primary" />
+            <Card className="p-4 sm:p-6 text-center hover:glow-cyan transition-all">
+              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 glass rounded-full mb-3 sm:mb-4 border border-primary/50">
+                <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
               </div>
-              <h3 className="font-semibold mb-2">Email</h3>
-              <p className="text-sm text-muted-foreground">24/7 support</p>
-              <p className="text-sm text-primary mt-1">sales@medpharm.com</p>
+              <h3 className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Email</h3>
+              <p className="text-xs sm:text-sm text-muted-foreground hidden sm:block">24/7 support</p>
+              <p className="text-xs sm:text-sm text-primary mt-1 break-all">sales@medpharm.com</p>
             </Card>
 
-            <Card className="p-6 text-center hover:glow-cyan transition-all">
-              <div className="inline-flex items-center justify-center w-12 h-12 glass rounded-full mb-4 border border-primary/50">
-                <MessageSquare className="h-6 w-6 text-primary" />
+            <Card className="p-4 sm:p-6 text-center hover:glow-cyan transition-all">
+              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 glass rounded-full mb-3 sm:mb-4 border border-primary/50">
+                <MessageSquare className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
               </div>
-              <h3 className="font-semibold mb-2">Live Chat</h3>
-              <p className="text-sm text-muted-foreground">Instant response</p>
-              <p className="text-sm text-primary mt-1">Start chat below</p>
+              <h3 className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Live Chat</h3>
+              <p className="text-xs sm:text-sm text-muted-foreground hidden sm:block">Instant response</p>
+              <p className="text-xs sm:text-sm text-primary mt-1">Start chat below</p>
             </Card>
 
-            <Card className="p-6 text-center hover:glow-cyan transition-all">
-              <div className="inline-flex items-center justify-center w-12 h-12 glass rounded-full mb-4 border border-primary/50">
-                <Clock className="h-6 w-6 text-primary" />
+            <Card className="p-4 sm:p-6 text-center hover:glow-cyan transition-all">
+              <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 glass rounded-full mb-3 sm:mb-4 border border-primary/50">
+                <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
               </div>
-              <h3 className="font-semibold mb-2">Hours</h3>
-              <p className="text-sm text-muted-foreground">Mon-Fri: 9AM-6PM</p>
-              <p className="text-sm text-muted-foreground">Sat: 10AM-2PM</p>
+              <h3 className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Hours</h3>
+              <p className="text-xs sm:text-sm text-muted-foreground">Mon-Fri: 9AM-6PM</p>
+              <p className="text-xs sm:text-sm text-muted-foreground hidden sm:block">Sat: 10AM-2PM</p>
             </Card>
           </div>
         </div>
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
+      <section className="py-8 sm:py-10 lg:py-12">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
-              <Card className="p-8">
-                <form onSubmit={handleSubmit} className="space-y-6">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Send Us a Message</h2>
+              <Card className="p-6 sm:p-8">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label className="text-sm font-medium mb-2 block">Full Name *</label>

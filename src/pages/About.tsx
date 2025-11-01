@@ -38,15 +38,15 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10" />
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <Badge className="mb-4" variant="outline">About Us</Badge>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 glow-text-cyan">
+            <Badge className="mb-3 sm:mb-4" variant="outline">About Us</Badge>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 glow-text-cyan px-2">
               Transforming Healthcare Through Excellence
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-base sm:text-lg text-muted-foreground px-2">
               For over 25 years, MedPharm Solutions has been a trusted partner in pharmaceutical 
               manufacturing, delivering quality medicines that improve and save lives globally.
             </p>
@@ -55,30 +55,30 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="glass p-3 rounded-full border border-primary/50">
-                  <Target className="h-6 w-6 text-primary" />
+      <section className="py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+            <Card className="p-6 sm:p-8">
+              <div className="flex items-center gap-3 mb-3 sm:mb-4">
+                <div className="glass p-2.5 sm:p-3 rounded-full border border-primary/50 flex-shrink-0">
+                  <Target className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                 </div>
-                <h2 className="text-2xl font-bold">Our Mission</h2>
+                <h2 className="text-xl sm:text-2xl font-bold">Our Mission</h2>
               </div>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 To provide healthcare professionals with reliable, high-quality pharmaceutical 
                 products that meet the highest standards of safety and efficacy, ensuring better 
                 patient outcomes worldwide.
               </p>
             </Card>
-            <Card className="p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="glass p-3 rounded-full border border-secondary/50">
-                  <TrendingUp className="h-6 w-6 text-secondary" />
+            <Card className="p-6 sm:p-8">
+              <div className="flex items-center gap-3 mb-3 sm:mb-4">
+                <div className="glass p-2.5 sm:p-3 rounded-full border border-secondary/50 flex-shrink-0">
+                  <TrendingUp className="h-5 w-5 sm:h-6 sm:w-6 text-secondary" />
                 </div>
-                <h2 className="text-2xl font-bold">Our Vision</h2>
+                <h2 className="text-xl sm:text-2xl font-bold">Our Vision</h2>
               </div>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 To be the global leader in pharmaceutical manufacturing, recognized for innovation, 
                 quality excellence, and unwavering commitment to improving healthcare accessibility 
                 for all communities.
